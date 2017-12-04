@@ -1,6 +1,10 @@
 #!/usr/bin/python
 # Reads /var/run/miner.output and averages out various stats per GPU
 # You should zero out the log file between config changes
+#
+# 1) modify your config with new overclock settings
+# 2) putconf
+# 3) minestop ; ethos-overclock ; >/var/run/miner.output ; minestart
 
 i = 0
 soltotal = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
