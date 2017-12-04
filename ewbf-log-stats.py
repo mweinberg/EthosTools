@@ -27,10 +27,9 @@ lines = f.readlines()
 f.close()
 
 for line in lines:
-	if line.startswith('|  '):
+	if line.startswith('|  ') and "EWBF" not in line:
 		gpuid = line[3]
 		gpuid = int(gpuid)
-		#print "GPUID: %s" % (gpuid)
 		if intervalreset == 0:
 			i += 1
 			intervalreset = 1
